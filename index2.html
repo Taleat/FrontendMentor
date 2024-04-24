@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dbc695aca8.js" crossorigin="anonymous"></script>
+    <title>Rating</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+    .number-rating .star-spot:hover{
+        background-color: #FF7717;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="upper-card">
+            <div class="star-spot">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="other">
+            <h1>How did we do?</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipi sicing elit. Quibusdam itaque eos doloremque commodi,
+                ea id.</p>
+            <div class="number-rating">
+                <div class="star-spot" id="r1" onclick="toggleRating(1)">
+<p>1</p>
+                </div>
+                <div class="star-spot" id="r2" onclick="toggleRating(2)">
+<p>2</p>
+                </div>
+                <div class="star-spot" id="r3" onclick="toggleRating(3)">
+<p>3</p>
+                </div>
+                <div class="star-spot" id="r4" onclick="toggleRating(4)">
+<p>4</p>
+                </div>
+                <div class="star-spot" id="r5" onclick="toggleRating(5)">
+<p>5</p>
+                </div>
+            </div>
+            <button class="btn">
+SUBMIT
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <script>
+        document.getElementById("r1").addEventListener("click", function(){
+            let one = document.getElementById("r1").style.background = "grey"
+            let two = document.getElementById("r2").style.background = " #223136"
+            let three = document.getElementById("r3").style.background = " #223136"
+            let four = document.getElementById("r4").style.background = " #223136"
+            let five = document.getElementById("r5").style.background = " #223136"
+        })
+        document.getElementById("r2").addEventListener("click", function(){
+           let one = document.getElementById("r1").style.background = "#223136"
+           let two = document.getElementById("r2").style.background = " grey"
+           let three = document.getElementById("r3").style.background = " #223136"
+           let four = document.getElementById("r4").style.background = " #223136"
+           let five = document.getElementById("r5").style.background = " #223136"
+        })
+        document.getElementById("r3").addEventListener("click", function(){
+            let one = document.getElementById("r1").style.background = " #223136"
+            let two = document.getElementById("r2").style.background = " #223136"
+            let three = document.getElementById("r3").style.background = "grey"
+            let four = document.getElementById("r4").style.background = " #223136"
+            let five = document.getElementById("r5").style.background = " #223136"
+        })
+        document.getElementById("r4").addEventListener("click", function(){
+            let one = document.getElementById("r1").style.background = " #223136"
+            let two = document.getElementById("r2").style.background = " #223136"
+            let three = document.getElementById("r3").style.background = " #223136"
+            let four = document.getElementById("r4").style.background = " grey"
+            let five = document.getElementById("r5").style.background = " #223136"
+        })
+        document.getElementById("r5").addEventListener("click", function(){
+            let one = document.getElementById("r1").style.background = " #223136"
+            let two = document.getElementById("r2").style.background = " #223136"
+            let three = document.getElementById("r3").style.background = " #223136"
+            let four = document.getElementById("r4").style.background = " #223136"
+            let five = document.getElementById("r5").style.background = " grey"
+        })
+        function toggleRating(rating) {
+            for (let i = 1; i <= 5; i++) {
+              let star = document.getElementById("r1" + i);
+              if (i <= rating) {
+                star.classList.add("active");
+              } else {
+                star.classList.remove("active");
+              }
+            }
+          }
+          toggleRating()
+    </script> -->
+</body>
+
+</html>

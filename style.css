@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, red 50%, black 50%);
+}
+.faqs-body{
+    /* border: 2px solid black; */
+    /* height: 500px;    */
+    width: 550px;
+    border-radius: 15px;
+    padding: 35px 30px 15px 30px;
+    background-color: white;
+}
+.one h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+#span, #span1, #span2, #span3{
+    display: none;
+}
+i{
+    font-size: 30px;
+}
+.two{
+    height: auto;
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    transform: ease .5s;
+}
+.accordion{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.two p{
+    color: gray;
+    display: none;
+    padding-bottom: 10px;
+}

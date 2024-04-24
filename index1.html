@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dbc695aca8.js" crossorigin="anonymous"></script>
+    <title>Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="faqs-body">
+        <div class="one">
+            <h1>FAQS</h1>
+        </div>
+        <div class="two">
+            <div class="accordion" id="accordion">
+                <h3>What is Frontend Mentor, and how will it help me?</h3>
+                <h4 id="h4"><i class="fa-solid fa-angle-down"></i></h1>
+                    <span id="span"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+            <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed at quod in unde optio doloribus ut
+                ex? Quae, similique amet eos aperiam incidunt dolor blanditiis tempore beatae at aliquam asperiores!</p>
+        </div>
+        <div class="two">
+            <div class="accordion" id="accordion">
+                <h3>IS Frontend Mentor free?</h3>
+                <h4 id="h41"><i class="fa-solid fa-angle-down"></i></h1>
+                    <span id="span1"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed at quod in unde optio doloribus ut ex?
+                Quae, similique amet eos aperiam incidunt dolor blanditiis tempore beatae at aliquam asperiores!</p>
+        </div>
+        <div class="two">
+            <div class="accordion" id="accordion">
+                <h3>Can i use frontend mentor projects in my portfolio?</h3>
+                <h4 id="h42"><i class="fa-solid fa-angle-down"></i></h1>
+                    <span id="span2"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed at quod in unde optio doloribus ut ex?
+                Quae, similique amet eos aperiam incidunt dolor blanditiis tempore beatae at aliquam asperiores!</p>
+        </div>
+        <div class="two">
+            <div class="accordion" id="accordion">
+                <h3>How can i get help if i'm stuck on a challenge?</h3>
+                <h4 id="h43"><i class="fa-solid fa-angle-down"></i></h1>
+                    <span id="span3"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+            <p id="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed at quod in unde optio doloribus ut ex?
+                Quae, similique amet eos aperiam incidunt dolor blanditiis tempore beatae at aliquam asperiores!</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        document.getElementById("h4").addEventListener("click", function () {
+            let one = document.getElementById("p").style.display = "block"
+            let one1 = document.getElementById("p1").style.display = "none"
+            let one2 = document.getElementById("p2").style.display = "none"
+            let one3 = document.getElementById("p3").style.display = "none"
+            let two = document.getElementById("h4").style.display = "none"
+            let two1 = document.getElementById("h41").style.display = "block"
+            let two2 = document.getElementById("h42").style.display = "block"
+            let two3 = document.getElementById("h43").style.display = "block"
+            let three = document.getElementById("span").style.display = "block"
+            let three1 = document.getElementById("span1").style.display = "none"
+            let three2 = document.getElementById("span2").style.display = "none"
+            let thre3 = document.getElementById("span3").style.display = "none"
+        })
+        document.getElementById("span").addEventListener("click", function () {
+            let one = document.getElementById("p").style.display = "none"
+            let two = document.getElementById("h4").style.display = "block"
+            let three = document.getElementById("span").style.display = "none"
+
+        })
+        document.getElementById("h41").addEventListener("click", function () {
+            let one = document.getElementById("p").style.display = "none"
+            let one1 = document.getElementById("p1").style.display = "block"
+            let one2 = document.getElementById("p2").style.display = "none"
+            let one3 = document.getElementById("p3").style.display = "none"
+            let two = document.getElementById("h4").style.display = "block"
+            let two1 = document.getElementById("h41").style.display = "none"
+            let two2 = document.getElementById("h42").style.display = "block"
+            let two3 = document.getElementById("h43").style.display = "block"
+            let three = document.getElementById("span").style.display = "none"
+            let three1 = document.getElementById("span1").style.display = "block"
+            let three2 = document.getElementById("span2").style.display = "none"
+            let thre3 = document.getElementById("span3").style.display = "none"
+        })
+        document.getElementById("span1").addEventListener("click", function () {
+            let one = document.getElementById("p1").style.display = "none"
+            let two = document.getElementById("h41").style.display = "block"
+            let three = document.getElementById("span1").style.display = "none"
+        })
+        document.getElementById("h42").addEventListener("click", function () {
+            let one = document.getElementById("p").style.display = "none"
+            let one1 = document.getElementById("p1").style.display = "none"
+            let one2 = document.getElementById("p2").style.display = "block"
+            let one3 = document.getElementById("p3").style.display = "none"
+            let two = document.getElementById("h4").style.display = "block"
+            let two1 = document.getElementById("h41").style.display = "block"
+            let two2 = document.getElementById("h42").style.display = "none"
+            let two3 = document.getElementById("h43").style.display = "block"
+            let three = document.getElementById("span").style.display = "none"
+            let three1 = document.getElementById("span1").style.display = "none"
+            let thre2 = document.getElementById("span2").style.display = "block"
+            let thre3 = document.getElementById("span3").style.display = "none"
+        })
+        document.getElementById("span2").addEventListener("click", function () {
+            let one = document.getElementById("p2").style.display = "none"
+            let two = document.getElementById("h42").style.display = "block"
+            let three = document.getElementById("span2").style.display = "none"
+        })
+        document.getElementById("h43").addEventListener("click", function () {
+            let one = document.getElementById("p").style.display = "none"
+            let one1 = document.getElementById("p1").style.display = "none"
+            let one2 = document.getElementById("p2").style.display = "none"
+            let one3 = document.getElementById("p3").style.display = "block"
+            let two = document.getElementById("h4").style.display = "block"
+            let two1 = document.getElementById("h41").style.display = "block"
+            let two2 = document.getElementById("h42").style.display = "block"
+            let two3 = document.getElementById("h43").style.display = "none"
+            let three = document.getElementById("span").style.display = "none"
+            let three1 = document.getElementById("span1").style.display = "none"
+            let thre2 = document.getElementById("span2").style.display = "none"
+            let thre3 = document.getElementById("span3").style.display = "block"
+        })
+        document.getElementById("span3").addEventListener("click", function () {
+            let one = document.getElementById("p3").style.display = "none"
+            let two = document.getElementById("h43").style.display = "block"
+            let three = document.getElementById("span3").style.display = "none"
+        })
+    </script>
+</body>
+
+</html>
